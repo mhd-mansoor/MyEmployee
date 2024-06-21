@@ -35,9 +35,9 @@ class EmployeeListFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         initViewModel()
+        loadUsers()
         initAdapter()
         setupRetryButton()
-        loadUsers()
         setupPagination()
     }
 
@@ -66,6 +66,7 @@ class EmployeeListFragment : Fragment() {
     }
 
     private fun showErrorLayout(title: String, message: String) {
+        showProgressBar()
         binding.errorLayout.visibility = View.VISIBLE
         binding.rvEmployeeList.visibility = View.GONE
         binding.noContentTitle.text = title
@@ -115,7 +116,6 @@ class EmployeeListFragment : Fragment() {
                 hideProgressBar()
             }
         } else {
-            showProgressBar()
             showErrorLayout(
                 getString(R.string.no_internet_title),
                 getString(R.string.no_internet_desc)
