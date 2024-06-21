@@ -839,12 +839,13 @@
 
                         <TextView
                             android:id="@+id/tvCompanyName"
-                            android:layout_width="wrap_content"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="@dimen/_16sdp"
                             android:layout_marginTop="@dimen/_3sdp"
                             android:maxLines="2"
                             android:textColor="@color/black"
+                            app:layout_constraintEnd_toStartOf="@+id/guideLine3"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toBottomOf="@+id/tvCompanyNameLabel"
                             tools:text="Codelynks Software" />
@@ -1241,12 +1242,13 @@
 
                         <TextView
                             android:id="@+id/tvCardNumber"
-                            android:layout_width="wrap_content"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="@dimen/_16sdp"
                             android:layout_marginTop="@dimen/_3sdp"
                             android:maxLines="2"
                             android:textColor="@color/black"
+                            app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="@id/guideLine4"
                             app:layout_constraintTop_toBottomOf="@+id/tvCardNumberLabel"
                             tools:text="23456765432" />

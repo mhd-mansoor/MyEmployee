@@ -110,7 +110,7 @@ class EmployeeDetailsFragment : Fragment() {
         binding.tvGender.text = user.gender
         binding.tvBirthDate.text = user.birthDate
         binding.tvHeight.text = getString(R.string.height_in, user.height.toInt())
-        binding.tvWeight.text = getString(R.string.height_in, user.weight.toInt())
+        binding.tvWeight.text = getString(R.string.weight_in, user.weight.toInt())
         binding.tvBloodGroup.text = user.bloodGroup
         binding.tvEyeColor.text = user.eyeColor
         binding.tvHairColor.text = user.hair.color
