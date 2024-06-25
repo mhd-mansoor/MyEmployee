@@ -1,0 +1,1 @@
+This project is an Android application that displays a list of employees. The list contains the employee's name, email, and job role. When a user clicks on an item, it shows the details of the selected employee.
